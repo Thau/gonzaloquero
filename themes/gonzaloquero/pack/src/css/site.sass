@@ -1,0 +1,61 @@
+@charset "utf-8"
+@import "colors.sass"
+@import "typography.sass"
+@import "code.sass"
+@import "portfolio.sass"
+
+main
+  max-width: 1000px
+  margin: 0 auto
+  padding: 0 1em
+
+nav
+  margin-top: $line-height
+  padding-top: $baseline-shift
+  margin-bottom: -$baseline-shift
+
+  .logo-container
+    display: block
+    margin-right: 2em
+    margin-bottom: $line-height
+
+    @media screen and (min-width: 840px)
+      display: inline
+      margin-bottom: 0
+
+  .logo
+    .logo-dark
+      font-weight: 800
+
+    .logo-light
+      font-weight: 100
+      margin-right: 2em
+
+  a
+    &:after
+      content: "|"
+      margin: 0 1em
+    &:last-child:after
+      content: ""
+
+img
+  max-width: 100%
+  margin-top: $line-height
+
+iframe
+  margin-top: $line-height
+
+figure
+  margin: 0 0 1.3em
+
+  figcaption
+    h4
+      margin-top: 0
+      font-size: 0.75em
+
+address
+  margin-top: $line-height
+  font-weight: 700
+
+.main-list
+  margin-top: $line-height

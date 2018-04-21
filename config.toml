@@ -1,0 +1,6 @@
+baseURL = "https://gonzaloquero.com/"
+languageCode = "en-gb"
+title = "Gonzalo Quero"
+theme = "gonzaloquero"
+staticDir = ["static"]
+pygmentsCodeFences = true

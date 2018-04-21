@@ -1,0 +1,78 @@
+@import "colors.sass"
+@import url(https://fonts.googleapis.com/css?family=Bitter|Raleway|IBM+Plex+Mono)
+
+$header-font: 'Bitter'
+$body-font: 'Raleway'
+$code-font: 'IBM Plex Mono'
+
+$font-size: 21px
+$line-height: 30px
+$baseline-shift: 8px
+
+html
+  font-size: $font-size
+
+body
+  background-color: $background
+  font-family: 'Raleway', serif
+  font-weight: 400
+  line-height: $line-height
+  color: $text
+  text-rendering: optimizeLegibility
+
+a
+  color: $text
+  font-weight: 700
+  text-decoration: underline $highlight-color
+
+p, li, span
+  margin-top: 0
+  margin-bottom: -$baseline-shift
+  padding-top: $baseline-shift
+
+p
+  margin-top: $line-height
+
+h1, h2, h3, h4, .logo
+  margin: $line-height 0 (-$baseline-shift) 0
+  font-family: 'Bitter'
+  font-weight: inherit
+  padding-top: $baseline-shift
+
+h1
+  font-size: 1.3em
+  padding-top: $baseline-shift - 1px
+  margin-bottom: -$baseline-shift + 1px
+
+h2
+  font-size: 1em
+
+h3
+  font-size: 1em
+
+h4
+  font-size: 1em
+
+small, .font_small
+  font-size: 1em
+
+ul
+  margin-top: 0
+  margin-bottom: $line-height
+
+.highlight
+  pre
+    margin: 0
+    margin-top: $line-height
+    padding-left: 1em
+    padding-right: 1em
+    padding-top: $baseline-shift
+    margin-bottom: -$baseline-shift
+    overflow: scroll
+
+    code
+      font-family: $code-font
+      font-size: $font-size - 1px
+
+  pre > span
+    margin-bottom: -$baseline-shift

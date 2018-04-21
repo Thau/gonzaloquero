@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en-gb">
+<head>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+  <meta content="<%= t(current_page.data.description, default: current_page.data.description) %>" name="description"/>
+  <link href="/css/main.css" rel="stylesheet"/>
+
+  <title>{{ .Title }} | Gonzalo Quero</title>
+</head>
+
+<body>
+  <main>
+    {{ partial "header.html" . }}
+
+    {{ block "main" . }}
+    {{ end }}
+  </main>
+</body>
+</html>

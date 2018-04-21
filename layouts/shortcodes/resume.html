@@ -1,0 +1,11 @@
+  <ul>
+    {{ range $.Site.Data.resume }}
+    <li class="experience vevent">
+      <span class="vcard">
+        <abbr class="dtstart" title="{{ .start }}">{{ .start }}</abbr> - <abbr class="dtend" title="{{ .end }}">{{ .end }}</abbr>
+        <span class="title summary">{{ .title }}</span>
+        <span class="location org">{{ .company }}</span>
+      </span>
+    </li>
+    {{ end }}
+  </ul>

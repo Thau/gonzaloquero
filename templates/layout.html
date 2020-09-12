@@ -4,7 +4,12 @@
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
-    <meta content="" name="description"/>
+
+    {% if section.description %}
+    <meta content="{{section.description}}" name="description"/>
+    {% else %}
+    <meta content="{{page.description}}" name="description"/>
+    {% endif %}
     <link href="/main.css" rel="stylesheet"/>
     <script src="/main.js" type="text/javascript"></script>
 

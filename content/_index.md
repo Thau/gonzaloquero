@@ -1,6 +1,7 @@
 +++
 title = "Web, VFX, and Game Development"
 template = "home.html"
+description = "A web, VFX, and game developer ramblings and portfolio."
 +++
 
 ## Who am I?

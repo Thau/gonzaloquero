@@ -1,5 +1,6 @@
 +++
 title = "Contact"
+description = "How to contact me"
 +++
 
 # Contact

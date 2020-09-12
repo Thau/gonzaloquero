@@ -1,0 +1,22 @@
+<p>Here's a mini résumé</p>
+
+{% set data = load_data(path="content/resume.toml") %}
+
+<ul class="h-resume">
+  {% for _key, job in data.job %}
+  <li class="p-experience h-event">
+    <span class="times">
+      <time class="dt-start" datetime="{{job.from}}">{{job.from}}</time>
+      - 
+      {% if job.to %}
+      <time class="dt-end" datetime="{{job.to}}">{{job.to}}</time>
+      {% else %}
+      <span>Currently</span>
+      {% endif %}
+    </span>
+
+    <span class="p-job-title">{{job.position}} at </span>
+    <span class="p-org">{{job.company}}</span>
+  </li>
+  {% endfor %}
+</ul>

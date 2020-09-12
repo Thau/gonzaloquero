@@ -1,0 +1,9 @@
+<figure>
+  {% set path = page.path|trim_start_matches(pat="/") %}
+  {% set meta = get_image_metadata(path=path ~ src) %}
+
+  <img src="{{ src }}" alt="{{ title }}" loading="lazy" height="{{meta.height}}" width="{{meta.width}}">
+  <figcaption>
+    <h4>{{ title }}</h4>
+  </figcaption>
+</figure>

@@ -1,0 +1,46 @@
+[job.0]
+from = 2008
+to = 2009
+position = "Intern"
+company = "Endesa Ingeniería"
+
+[job.1]
+from = 2008
+to = 2009
+position = "Tech Manager"
+company = "Imaginática 2009"
+
+[job.2]
+from = 2010
+to = 2013
+position = "Developer and Community Manager"
+company = "16 Escalones Producciones"
+
+[job.3]
+from = 2013
+to = 2016
+position = "Founder, Lead Developer"
+company = "DoblePalabra"
+
+[job.4]
+from = 2014
+to = 2017
+position = "Lead Developer"
+company = "16 Escalones Producciones"
+
+[job.5]
+from = 2017
+to = 2019
+position = "Engineer III/Senior Engineer"
+company = "Quiqup"
+
+[job.6]
+from = 2019
+to = 2020
+position = "Senior Member of Technical Staff"
+company = "VMWare"
+
+[job.7]
+from = 2020
+position = "Senior Engineer"
+company = "DRW"

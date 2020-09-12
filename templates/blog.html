@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <ul class="main-list">
+    {% for post in section.pages %}
+      <li><a href="{{ post.permalink }}">{{ post.date }}: {{post.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock content %}
+

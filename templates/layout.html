@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en-gb">
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="" name="description"/>
+    <link href="/main.css" rel="stylesheet"/>
+    <script src="/main.js" type="text/javascript"></script>
+
+		{% if section.title %}
+			<title>{{section.title}} | Gonzalo Quero</title>
+		{% else %}
+			<title>{{page.title}} | Gonzalo Quero</title>
+		{% endif %}
+  </head>
+
+  <body>
+		<main>
+			<nav>
+				<div class="logo-container">
+					<span class="logo logo-dark">Gonzalo</span>
+					<span class="logo logo-light">Quero</span>
+				</div>
+				<a class="" href="/">Home</a>
+				<a class="" href="/blog">Blog</a>
+				<a class="" href="/portfolio">Portfolio</a>
+				<a class="" href="/contact">Contact</a>
+			</nav>
+
+			{% block content %}
+				{% if section.content %}
+					{{ section.content | safe }}
+				{% else %}
+					{{ page.content | safe }}
+				{% endif %}
+			{% endblock content %}
+		</main>
+  </body>
+
+</html>
+

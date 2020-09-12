@@ -1,4 +1,4 @@
----
-title: Portfolio
-layout: portfolio_list
----
++++
+title = "Portfolio"
+template = "portfolio.html"
++++

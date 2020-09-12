@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Portfolio</h1>
+
+<div class="portfolio">
+    {% for portfolio in section.pages %}
+    <div class="portfolio-card">
+      <a href="{{ portfolio.permalink }}">
+        <img alt="{{ portfolio.title }}" src="{{ portfolio.path ~ portfolio.extra.main_image }}"/>
+        <h2>{{ portfolio.title }}</h2>
+      </a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock content %}

@@ -203,6 +203,11 @@ address {
 
 .main-list {
   margin-top: 30px;
+  padding-left: 1em;
+}
+
+.main-list li {
+  margin-bottom: 0.5em;
 }
 
 .youtube-player {

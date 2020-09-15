@@ -6,7 +6,7 @@ description = "How to contact me"
 # Contact
 
 Twitter: [@TheRealThau](https://twitter.com/TheRealThau)\
-Email: [me@gonzaloquero.com](me@gonzaloquero.com)
+Email: [me@gonzaloquero.com](mailto:me@gonzaloquero.com)
 
 ## Advise to recruiters
 

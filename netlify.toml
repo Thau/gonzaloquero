@@ -6,7 +6,4 @@ command = "zola build"
 ZOLA_VERSION = "0.12.0"
 
 [[plugins]]
-package = "netlify-plugin-subfont"
-
-[[plugins]]
 package = "netlify-plugin-inline-critical-css"

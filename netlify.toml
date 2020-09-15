@@ -5,5 +5,22 @@ command = "zola build"
 [build.environment]
 ZOLA_VERSION = "0.12.0"
 
+[build.processing]
+skip_processing = false
+
+[build.processing.css]
+bundle = false
+minify = true
+
+[build.processing.js]
+bundle = true
+minify = true
+
+[build.processing.html]
+pretty_urls = false
+
+[build.processing.images]
+compress = true
+
 [[plugins]]
 package = "netlify-plugin-inline-critical-css"
